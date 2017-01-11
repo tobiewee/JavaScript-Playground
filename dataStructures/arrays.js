@@ -27,3 +27,28 @@ thingsIPhotograph.indexOf("People"); // 2
 // Array slicing
 var copyOfThingsIPhotograph = thingsIPhotograph.slice();
 var subsetOfThingsIPhotograph = thingsIPhotograph.slice(1,3);
+
+// Array splice (delete elements)
+copyOfThingsIPhotograph.splice(1,2); // remove 2 items starting at index 1
+console.log(copyOfThingsIPhotograph);
+
+// accessing each element in array
+// for
+console.log("Iterating using for loop:");
+for(var i=0; i<thingsIPhotograph.length; i++) {
+  console.log(thingsIPhotograph[i]);
+}
+
+console.log();
+
+// forEach (newer, more popular)
+console.log("Iterating using forEach loop");
+thingsIPhotograph.forEach(function(aThingIPhotograph){
+  console.log(aThingIPhotograph);
+})
+
+// OR
+function printString(str) {
+  console.log(">>>>>>" + str);
+}
+thingsIPhotograph.forEach(printString);
