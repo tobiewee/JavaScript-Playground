@@ -1,3 +1,3 @@
 function kebabToSnake(str) {
-  return str.replace("-", "_")
+  return str.replace("-", "_");
 }
