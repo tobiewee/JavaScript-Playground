@@ -1,5 +1,5 @@
 var itemEmptyObject = {};
-itemEmptyObject.name = "Empty Object";
+itemEmptyObject.name = "Empty Object"; // add property
 console.log(itemEmptyObject.name);
 
 var item = {
