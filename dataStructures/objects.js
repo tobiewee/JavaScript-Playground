@@ -5,10 +5,13 @@ console.log(itemEmptyObject.name);
 var item = {
   name: "camera",
   age: 5,
-  owner: "Jimmy"
+  owner: "Jimmy",
+  getName: function(){
+    return this.name;
+  }
 };
 
-console.log(item["owner"] + " has a " + item.age + " year old " + item.name);
+console.log(item["owner"] + " has a " + item.age + " year old " + item.getName());
 
 item.age += 1; // 1 year later...
-console.log(item["owner"] + " has a " + item.age + " year old " + item.name);
+console.log(item["owner"] + " has a " + item.age + " year old " + item.getName());
